@@ -1,4 +1,4 @@
-# WireGuard VPN Server Setup
+# WireGuard VPN Setup (Server & Client)
 
 Secure, production-ready setup for a WireGuard VPN server on any Linux server (Ubuntu/Debian recommended), with full-tunnel routing and real-world troubleshooting.
 
