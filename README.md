@@ -246,6 +246,18 @@ cat /etc/wireguard/server_public.key
 PrivateKey = <CLIENT_PRIVATE_KEY>
 Address = 10.10.0.2/24
 DNS = 1.1.1.1
+# MTU (Maximum Transmission Unit)
+# Default WireGuard MTU is usually ~1420
+# Use lower values if you experience:
+# - slow connections
+# - some websites not loading
+# - random timeouts
+#
+# Recommended values:
+# 1420 → default (best performance if network is clean)
+# 1380 → good for restricted networks / VPN over VPN (recommended)
+# 1280 → fallback for very restrictive networks
+MTU = 1380
 
 [Peer]
 PublicKey = <SERVER_PUBLIC_KEY>
